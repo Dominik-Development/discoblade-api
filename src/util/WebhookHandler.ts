@@ -8,8 +8,6 @@ export default class WebhookHandler {
         this.id = id;
         this.token = token;
         this.content = content;
-
-        return this;
     }
 
     async send() {
