@@ -10,7 +10,6 @@ export default class MiddleWare {
         this.router = router;
     }
     async connect() {
-        console.log('uwu');
         this.router.use((req: any, res: any | string, next: any) => {
             Logging.info(`Incomming -> Method [${req.method}] - Url: [${req.url}] - IP: [${req.socket.remoteAddress}]`);
 
